@@ -1,0 +1,92 @@
+[
+  {
+      "name": "Spaghetti Carbonara",
+      "images": "static/images/EGGS AND SALMON2.jpg",
+      "ingredients": [
+          "200g spaghetti",
+          "100g pancetta",
+          "50g pecorino cheese",
+          "2 large eggs",
+          "2 cloves garlic",
+          "Salt and pepper"
+      ],
+      "instructions": [
+          "Cook the spaghetti according to package instructions.",
+          "In a pan, cook the pancetta until crispy.",
+          "In a bowl, beat the eggs and mix with grated pecorino cheese.",
+          "Add garlic to the pan with pancetta, then remove the garlic and add the cooked spaghetti.",
+          "Remove from heat and mix in the egg and cheese mixture.",
+          "Season with salt and pepper and serve."
+      ]
+  },
+  {
+      "name": "Chicken Stir-Fry",
+      "images": "static/images/EGGS AND SALMON2.jpg",
+      "ingredients": [
+          "300g chicken breast",
+          "2 tablespoons soy sauce",
+          "1 tablespoon olive oil",
+          "1 bell pepper, sliced",
+          "1 carrot, sliced",
+          "1 cup broccoli florets",
+          "2 cloves garlic, minced",
+          "1 tablespoon ginger, minced",
+          "Salt and pepper to taste"
+      ],
+      "instructions": [
+          "Slice the chicken breast into thin strips.",
+          "In a large pan, heat olive oil over medium heat.",
+          "Add garlic and ginger, and cook for 1 minute.",
+          "Add chicken strips and cook until browned.",
+          "Add bell pepper, carrot, and broccoli to the pan.",
+          "Pour soy sauce over the mixture and cook until vegetables are tender.",
+          "Season with salt and pepper and serve."
+      ]
+  },
+  {
+      "name": "Vegetarian Chili",
+      "images": "static/images/EGGS AND SALMON2.jpg",
+      "ingredients": [
+          "1 tablespoon olive oil",
+          "1 onion, chopped",
+          "2 cloves garlic, minced",
+          "1 bell pepper, chopped",
+          "2 cans (400g each) diced tomatoes",
+          "1 can (400g) kidney beans, drained and rinsed",
+          "1 can (400g) black beans, drained and rinsed",
+          "1 cup corn kernels",
+          "2 tablespoons chili powder",
+          "1 teaspoon cumin",
+          "Salt and pepper to taste"
+      ],
+      "instructions": [
+          "Heat olive oil in a large pot over medium heat.",
+          "Add onion and garlic, and cook until softened.",
+          "Add bell pepper and cook for another 2 minutes.",
+          "Stir in diced tomatoes, beans, and corn.",
+          "Add chili powder and cumin, and mix well.",
+          "Simmer for 20 minutes, stirring occasionally.",
+          "Season with salt and pepper, and serve hot."
+      ]
+  },
+  {
+      "name": "Classic Caesar Salad",
+      "images": "static/images/EGGS AND SALMON2.jpg",
+      "ingredients": [
+          "1 head romaine lettuce, chopped",
+          "1/2 cup Caesar dressing",
+          "1/4 cup grated Parmesan cheese",
+          "1 cup croutons",
+          "1 clove garlic, minced",
+          "1 tablespoon lemon juice",
+          "Salt and pepper to taste"
+      ],
+      "instructions": [
+          "In a large bowl, combine chopped romaine lettuce and Caesar dressing.",
+          "Add grated Parmesan cheese and mix well.",
+          "Top with croutons and minced garlic.",
+          "Drizzle with lemon juice and season with salt and pepper.",
+          "Toss everything together and serve immediately."
+      ]
+  }
+]

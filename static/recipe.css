@@ -1,0 +1,36 @@
+body{
+    background-color: #020a10
+}
+
+section {
+    height: 100vh; /* Each section takes up the full height of the viewport */
+    display: flex; /* Center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color: bisque;
+    flex-direction: column;
+    
+   
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+img{
+    width:400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.text-container{
+    display: flex;
+}

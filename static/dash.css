@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+    
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+
+header ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+:root{
+    --width-circle: 150vw;
+    --radius: calc(100vw / 6);
+}
+
+img{
+    width:400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.slider{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #17232A;
+    background-image: radial-gradient(#fff3, transparent 50%);
+    margin-top: -50px;
+}
+
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: transform .8s;
+}
+
+.slider .list .item{
+
+    width: calc(var(--radius)*2);
+    text-align: center;
+    transform: rotate(45deg);
+    transition: transform 1s;
+}
+
+
+.slider .list .item.active{
+    transform: rotate(0deg);
+}
+
+.slider .list .item img{
+   
+    filter: drop-shadow(0 0 20px #000);
+    
+}
+
+.slider .content{
+
+    position: absolute;
+    bottom:  5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    /* width: max-content;*/
+}
+
+.AppName{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slider .content button{
+    background: transparent;
+    border-radius: 100px;
+    letter-spacing: 5px;
+    color: white;
+    padding: 10px 100px ;
+   
+    font-family: Poppins;
+
+}
+
+.prev, .next{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    background-color: #eee5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee8;
+    cursor: pointer;
+    color: rgb(255, 253, 252);
+    
+}
+
+
+.prev{
+    left:35px;
+}
+
+.next{
+    right: 35px;
+}
+
+
+.blocker{
+    color: #17232A;
+}
+
+header{
+    padding-right: 20px;
+    color: white
+
+}
+
+.logoutButton {
+    cursor: pointer;
+    border: none;
+    background-color: #17232A;
+    color: white; /* Changes the cursor to a pointer */
+}
+
+.logoutButton:hover, .loginLink:hover {
+    text-decoration: underline;
+    cursor: pointer; /* Show pointer cursor */
+    opacity: 0.8;
+}
