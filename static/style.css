@@ -12,7 +12,7 @@ body {
 
 
 .intro-container {
-    background-color: #052810; /* Black background color */
+    background-color: #020a05; /* Black background color */
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
     display: flex; /* Use flexbox for centering */
@@ -55,7 +55,9 @@ body {
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers child elements horizontally */
     align-items: center; /* Centers child elements vertically */
-    background-image: url('/static/images/ten.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/static/images/new.avif');
 
     
     background-position: center;
@@ -89,7 +91,6 @@ body {
     display: flex;
     justify-content: flex-end; /* Aligns items to the bottom of the container */
     gap: 20px; /* Space between buttons */
-    border: 3px solid rgb(89, 16, 16);
     width: 80%;/* Visualize the container */
     padding: 12px 20px;
  }
@@ -129,8 +130,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  color: white;
-  border: 8px solid white;
+  color: white; 
   position: fixed;
   width:40%;
   height: 50%;
@@ -144,7 +144,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   color: white;
-  border: 8px solid white;
+  
   position: fixed;
   width:40%;
   height: 50%;
@@ -153,7 +153,7 @@ body {
 
 
 
-.loginLink{
+.forgotPass{
     color:white
 }
 
@@ -172,15 +172,12 @@ body {
 
 .logoBox{
     display: flex;
-    border: 12px solid black;
     width: 200px;
    
 }
 
 .topRow{
     display: flex;
-    border: 5px solid black;
-    
     align-self: flex-start;
     width:100%;
 }
@@ -279,7 +276,7 @@ body {
 
 .emailBox::placeholder {
     color: #FFFFFF; /* Brighter white placeholder text */
-    opacity: 1.2; /* Slightly less opacity for better visibility */
+    opacity: 1.5; /* Slightly less opacity for better visibility */
 }
 
 
@@ -327,3 +324,61 @@ body {
     font-weight: bold;
 }
 
+ 
+.forgotForm{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white; 
+  position: fixed;
+  width:30%;
+  height: 5%;
+
+}
+
+
+.forgot {
+    opacity: 0.5; /* Initial low opacity like the emailBox */
+    border-radius: 100px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    background-color: gray; /* Similar to other input fields */
+    outline: none;
+    color: white; /* White text */
+}
+
+.forgot:hover {
+    opacity: 0.7; /* Hover effect to increase opacity */
+}
+
+.forgot::placeholder {
+    color: #FFFFFF; /* Brighter white placeholder text */
+    opacity: 1; /* Make placeholder more visible */
+}
+
+
+.forgContainer{
+
+        display: flex;
+        width: 50%;
+        gap: 6px;
+}
+
+.ResetMessage{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white; 
+  position: fixed;
+  width:30%;
+  height: 5%;
+}
+
+.loginLink{
+    color: white;
+}

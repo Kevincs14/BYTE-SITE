@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17232A; /* Background for the whole page */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.wrapper {
+    background-color: transparent; /* Background for the wrapper */
+    padding: 20px; /* Padding inside the wrapper */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid white;
+    color: #fdfafa;
+}
+
+.confirmForm {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between elements */
+    width: 450px;
+    height: 350px;
+}
+.box1{
+    border-radius: 100px;
+    transform:scale(2);
+   
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    padding: 3px 6px;
+}
+
+.box1:hover{
+    opacity: 0.8;
+}
+
+.confirmForm input {
+    font-size: 8px; 
+       
+}
+
+.logo{
+    display: inline;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Ensures no extra space */
+    color: rgb(246, 237, 237); 
+    margin-bottom: 30px;
+    
+}
+
+
+.inputBox{
+    background-color: transparent;
+}
+
+.inputBox input{
+   background: transparent;
+   border: none;
+   outline: none;
+   border: 1px solid white;
+   color: white;
+    
+}
+
+
+.button{
+   border-radius: 100px;
+   transform: scale(2);
+   margin-top: 22px;
+   outline: none;
+   border: none;
+   color: black;
+   opacity: 1;
+   background-color: white;
+   width: 150px;
+   font-size: 10px;
+   padding: 5px 4px;
+}
+
+.button:hover{
+    opacity: 0.8;
+}

@@ -34,3 +34,7 @@ img{
 .text-container{
     display: flex;
 }
+
+.ForgotSubmit{
+    border: none;
+}

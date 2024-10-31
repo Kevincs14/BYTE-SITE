@@ -17,14 +17,10 @@
      <!-- Intro Screen -->
   
     <div class="intro-container"> <!-- Container for the intro screen content -->
-        <span class="hello">Hello</span>
-        <span class="hello">こんにちは</span>
-        <span class="hello">Bonjour</span>
-        <span class="hello">Ahoj</span>
-        <span class="hello">Ciao</span>
-        <span class="hello">안녕하세요</span>
-        <span class="hello">Привет</span>
-        <span class="hello">Hola</span>
+        <span class="hello">5 NEW RECIPES</span>
+        <span class="hello">EVERY</span>
+        <span class="hello">WEEK</span>
+        <span class="hello">BYTE</span>
     </div>
 
    
@@ -36,13 +32,13 @@
         
     {% if error %}
     <div class="error-message" style="color: red;">
-      {{ error }}
+    {{ error }}
     </div>
     {% endif %}
 
       <div class="topRow"> <!-- Top section containing logo and buttons -->
         <div class="logoBox"> <!-- Box for the logo -->
-          <div class="logo">ECHO</div> <!-- Logo text -->
+          <div class="logo">BYTE</div> <!-- Logo text -->
         </div>
         <!-- Display error message if present -->
   
@@ -101,10 +97,18 @@
 
   <div class="registerWrapper"> <!-- Wrapper for the register button -->
       <button type="submit" class="LogButton">Login</button><!-- Register button -->
-      <a href="/login" class="loginLink">forgot password?</a>
+      <a href="/login" class="forgotPass">forgot password?</a>
   </div>
 </form>
+ 
 
+  <form class="forgotForm" method="POST" action='/reset-password-request'>
+    <h1>ENTER THE EMAIL YOU SIGNED UP WITH</h1>
+    <div class="forgContainer">
+      <input type="email" class="forgot" name="forgotPass" placeholder="email">
+      <button type="submit" class="ForgotSubmit">submit</button>
+    </div>
+  </form>
 
 
       

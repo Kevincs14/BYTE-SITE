@@ -147,8 +147,9 @@ header{
     color: white; /* Changes the cursor to a pointer */
 }
 
-.logoutButton:hover, .loginLink:hover {
+.logoutButton:hover, .forgotPass:hover {
     text-decoration: underline;
     cursor: pointer; /* Show pointer cursor */
     opacity: 0.8;
 }
+

@@ -7,6 +7,8 @@ const loginBoxDiv = document.querySelector('.loginBox');
 const SignInSW = document.querySelector('.SignInSwitch');
 const SignUpSW = document.querySelector('.SignUpSwitch');
 const errMessage = document.querySelector('.error-message');
+const FormForgot = document.querySelector('.forgotForm');
+const Rmessage = document.querySelector('.ResetMessage');
 
 let index = 0; // Initialize index for intro animation
 
@@ -100,6 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelector(".loginLink").addEventListener("click", (event) => {
     event.preventDefault(); // Prevent default action for the link
 
+    if (errMessage) {
+        errMessage.style.display = 'none'; // Hide the error message if present
+    }
+
     // Show the SignIn div and hide the loginBox div
     if (signInDiv) {
         signInDiv.style.display = 'flex'; 
@@ -153,7 +159,7 @@ document.querySelector(".SignUpSwitch").addEventListener("click", (event) => {
     }
 
     // Hide error message and update visibility of switch elements
-    errMessage.style.display = 'none';
+    
     SignUpSW.classList.add("show");
     SignUpSW.classList.remove("hide");
     SignInSW.classList.add("hide");
@@ -183,4 +189,27 @@ document.querySelector(".SignInSwitch").addEventListener("click", (event) => {
 
     // Save the current state to local storage
     localStorage.setItem('pageState', 'login');
+});
+
+
+document.querySelector(".forgotPass").addEventListener("click", (event)=>{
+    event.preventDefault();
+    loginBoxDiv.style.display = 'none';
+    signInDiv.style.display = 'none';
+    FormForgot.style.display = 'flex';
+    SignInSW.style.display = 'none';
+    SignUpSW.style.display = 'none';
+
+});
+
+document.querySelector(".ForgotSubmit").addEventListener("click", (event) => {
+    // No event.preventDefault() to let the form submit normally
+    // Optionally, add validation here (e.g., check if email is provided)
+
+    // Programmatically submit the form
+    FormForgot.submit();
+
+    // Hide the form and show the success message
+    FormForgot.style.display = 'none';
+    Rmessage.style.display = 'flex';
 });

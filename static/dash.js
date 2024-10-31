@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let active = 1;
     let width_item = items[0].offsetWidth;
     let SeeMore = document.querySelector('.seeButt');
+    let forgotPassword = document.querySelector('.loginLink');
+
 
     console.log(SeeMore); // Check if the button is found
 
@@ -45,11 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-function logout() {
-    console.log("Logout function called"); // Debugging line
-    window.location.href = '/logout';  // Redirect to the logout route
-}
+document.addEventListener("DOMContentLoaded", () => {
+    let logoutButton = document.querySelector('.logoutButton');
+    
+    if (logoutButton) {
+        logoutButton.addEventListener('click', () => {
+            console.log("Logout function called");  // Debugging line
+            window.location.href = '/logout';      // Redirect to the logout route
+        });
+    }
+
+    // Rest of your existing code
+});
 
 function redirectToLogin() {
     window.location.href = '/';  // Adjust as needed for your login page
 }
+
