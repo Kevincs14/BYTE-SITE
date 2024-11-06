@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (loginPage) {
                 setTimeout(() => {
                     loginPage.classList.add('show'); // Show the login page
-                }, 400); // Delay before showing login page
+                }, 0); // Delay before showing login page
             }
             SignUpSW.classList.add("show");
         }, 4000); // Duration before intro screen moves up

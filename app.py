@@ -174,6 +174,11 @@ def reset():
     return render_template('index.html')
 
 
+
+@app.route('/contact-us')
+def contact():
+    return  render_template('contact.html')
+
 # Run the Flask app in debug mode for development
 if __name__ == '__main__':
     with app.app_context():  # Ensure app context is created for database access
