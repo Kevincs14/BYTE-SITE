@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <!-- WRAPPER -->
+  <div class="wrapper"> <!-- Main wrapper for the entire page -->
+
+    <!-- Intro Screen -->
+     <!-- Intro Screen -->
+  
+    <div class="intro-container"> <!-- Container for the intro screen content -->
+        <span class="hello">4 NEW RECIPES</span>
+        <span class="hello">EVERY</span>
+        <span class="hello">WEEK</span>
+        <span class="hello">BYTE</span>
+    </div>
+
+   
+  
+    <!-- Login Page -->
+    <div class="loginPage">
+      <!-- Container for the login page -->
+
+        
+    {% if error %}
+    <div class="error-message" style="color: red;">
+    {{ error }}
+    </div>
+    {% endif %}
+
+      <div class="topRow"> <!-- Top section containing logo and buttons -->
+        <div class="logoBox"> <!-- Box for the logo -->
+          <div class="logo">BYTE</div> <!-- Logo text -->
+        </div>
+        <!-- Display error message if present -->
+  
+        <div class="signButtons"> <!-- Container for sign-in and sign-up buttons -->
+          <button type="submit" class="SignInSwitch">Sign in</button> <!-- Sign in button -->
+          <button type="submit" class="SignUpSwitch">Sign up</button> <!-- Sign up button -->
+        </div>
+      </div> <!-- End of topRow -->
+
+      <!-- Login Box -->
+    <!-- Registration Form -->
+<form class = "loginBox" method="post" action="/">
+    <input type="hidden" id="actionInput" name="action" value="register">
+
+    <div class="loginBox"> <!-- Container for the login and sign-up form -->
+        <p>Have an account? <a href="/login" class="loginLink">Login</a></p> <!-- Link to login page -->
+        <h1>Sign Up</h1> <!-- Heading for sign-up -->
+
+        <div class="emailWrapper"> <!-- Wrapper for the username input -->
+            <input type="text" class="emailBox" name="username" placeholder="Username" required> <!-- Username input -->
+            <i style='font-size:17px' class='fas'>&#xf406;</i> <!-- Icon for username -->
+        </div>
+
+        <div class="userWrapper"> <!-- Wrapper for the email input -->
+            <input type="email" class="emailBox" name="email" placeholder="Email" required> <!-- Email input -->
+            <i style='font-size:17px' class='fas'>&#9993;</i> <!-- Icon for email -->
+        </div>
+
+        <div class="passwordWrapper"> <!-- Wrapper for the password input -->
+            <input type="password" class="emailBox" name="password" placeholder="Password" required> <!-- Password input -->
+            <i style='font-size:17px' class='fas'>&#x2605;</i> <!-- Icon for password -->
+        </div>
+
+        <div class="registerWrapper"> <!-- Wrapper for the register button -->
+            <button type="submit" class="RegButton">Register</button> <!-- Register button -->
+        </div>
+    </div> <!-- End of loginBox -->
+  </form>
+
+
+   <!--Sign in Box-->
+<form class="SignIn" method="post" action="/">
+  <input type="hidden" id="acti2Input" name="action" value="login">
+  <p>Don't have an account? <a href="/login" class="SignUpLink">Sign Up</a></p>
+  <h1>Log In</h1> <!-- Heading for sign-up -->
+
+  <div class="userWrapper"> <!-- Wrapper for the username input -->
+      <input type="text" class="emailBox" name="username" placeholder="Username"> <!-- Username input -->
+      <i style='font-size:17px' class='fas'>&#xf406;</i> <!-- Icon for username -->
+  </div>
+
+  <div class="passwordWrapper"> <!-- Wrapper for the password input -->
+      <input type="password" class="emailBox" name="password" placeholder="Password"><!-- Password input -->
+      <i style='font-size:17px' class='fas'>&#x2605;</i> <!-- Icon for password -->
+  </div>
+
+  <div class="registerWrapper"> <!-- Wrapper for the register button -->
+      <button type="submit" class="LogButton">Login</button><!-- Register button -->
+      <a href="/login" class="forgotPass">forgot password?</a>
+  </div>
+</form>
+ 
+
+  <form class="forgotForm" method="POST" action='/reset-password-request'>
+    <h1>ENTER THE EMAIL YOU SIGNED UP WITH</h1>
+    <div class="forgContainer">
+      <input type="email" class="forgot" name="forgotPass" placeholder="email">
+      <button type="submit" class="ForgotSubmit">submit</button>
+    </div>
+  </form>
+
+
+      
+
+    </div> <!-- End of loginPage -->
+
+  </div> <!-- End of wrapper -->
+
+  <script type="module" src="{{ url_for('static', filename='index.js') }}">
+
+  </script>
+
+
+</body>
+</html>
